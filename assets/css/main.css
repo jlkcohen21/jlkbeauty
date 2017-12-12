@@ -1651,7 +1651,7 @@
 	}
 
 	#bg:before {
-		background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.75));
+		background-image: linear-gradient(to top, rgba(19, 21, 25, 0.7), rgba(19, 21, 25, 0.75));
 		background-size: auto, 256px 256px;
 		background-position: center, center;
 		background-repeat: no-repeat, repeat;
