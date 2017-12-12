@@ -3731,9 +3731,7 @@
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		padding: 5em 5em 3em 5em ;
 		width: calc(100% + 2em);
-		margin: 0 0 0 -2em;
 	}
 
 		#footer > * {
