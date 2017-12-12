@@ -1624,11 +1624,53 @@
 	}
 
 	body {
-		background-color: #935d8c;
+		/*background-color: #935d8c;
 		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);*/
+	}
+
+	#bg {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		z-index: 1;
+	}
+
+	#bg:before, #bg:after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	#bg:before {
+		background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.75));
+		background-size: auto, 256px 256px;
+		background-position: center, center;
+		background-repeat: no-repeat, repeat;
+		z-index: 2;
+	}
+
+	#bg:after {
+		background-image: url("../../images/microblading-banner.jpg");
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		z-index: 1;
+	}
+
+	#wrapper {
+		position: relative;
+		min-height: 100vh;
+		width: 100%;
+		z-index: 3;
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -1645,7 +1687,6 @@
 /* Type */
 
 	body {
-		background-color: #935d8c;
 		color: rgba(255, 255, 255, 0.65);
 	}
 
@@ -3233,11 +3274,6 @@
 			transform: scale(0.8) rotate(-30deg);
 		}
 
-.book-now {
-	position: absolute;
-	
-}
-
 /* Nav */
 
 	#nav {
@@ -3368,26 +3404,8 @@
 /* Main */
 
 	#main {
-		background-color: #ffffff;
-		color: #636363;
 		border-radius: 0.25em;
 	}
-
-		#main input, #main select, #main textarea {
-			color: #636363;
-		}
-
-		#main a:hover {
-			color: #636363;
-		}
-
-		#main strong, #main b {
-			color: #636363;
-		}
-
-		#main h1, #main h2, #main h3, #main h4, #main h5, #main h6 {
-			color: #636363;
-		}
 
 		#main blockquote {
 			border-left-color: #dddddd;
@@ -3413,7 +3431,6 @@
 		#main .button {
 			background-color: transparent;
 			box-shadow: inset 0 0 0 1px #dddddd;
-			color: #636363 !important;
 		}
 
 			#main input[type="submit"]:hover,
@@ -3611,12 +3628,7 @@
 
 		#main > .main {
 			padding: 5em 5em 3em 5em ;
-			border-top: solid 1px #dddddd;
 		}
-
-			#main > .main:first-child {
-				border-top: 0;
-			}
 
 			#main > .main > .image.main:first-child {
 				margin: -5em 0 5em -5em;
@@ -3721,7 +3733,7 @@
 		flex-wrap: wrap;
 		padding: 5em 5em 3em 5em ;
 		width: calc(100% + 2em);
-		margin: 0 0 3em -2em;
+		margin: 0 0 0 -2em;
 	}
 
 		#footer > * {
