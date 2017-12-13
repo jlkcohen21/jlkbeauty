@@ -2052,7 +2052,7 @@
 		input[type="button"].icon:before,
 		button.icon:before,
 		.button.icon:before {
-			color: rgba(255, 255, 255, 0.5);
+			/*color: rgba(255, 255, 255, 0.5);*/
 		}
 
 		input[type="submit"].special,
@@ -3454,7 +3454,7 @@
 			#main input[type="button"].icon:before,
 			#main button.icon:before,
 			#main .button.icon:before {
-				color: rgba(99, 99, 99, 0.25);
+				/*color: rgba(99, 99, 99, 0.25);*/
 			}
 
 			#main input[type="submit"].special,
