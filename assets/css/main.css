@@ -1677,6 +1677,10 @@
 		margin: 4em 0;
 	}
 
+	.description {
+		font-size: 1.2em;
+	}
+
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
 			-moz-animation: none !important;
 			-webkit-animation: none !important;
