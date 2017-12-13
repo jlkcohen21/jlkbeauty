@@ -1673,6 +1673,10 @@
 		z-index: 3;
 	}
 
+	.gallery {
+		margin: 4em 0;
+	}
+
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
 			-moz-animation: none !important;
 			-webkit-animation: none !important;
@@ -1902,7 +1906,6 @@
 	.box {
 		border-radius: 8px;
 		border: solid;
-		margin-bottom: 2em;
 		padding: 1.5em;
 	}
 
